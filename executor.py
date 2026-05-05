@@ -36,7 +36,7 @@ def execute_command(command_name):
         (command_name, "success")
     )
 
-    console.print("[bold green]S000:[/bold green] Command executed successfully.")
+    console.print("[bold dark_green]S000:[/bold dark_green] Command executed successfully.")
 
     conn.commit()
     conn.close()

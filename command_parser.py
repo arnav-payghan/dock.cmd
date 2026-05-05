@@ -1,6 +1,9 @@
 from executor import execute_command
 from database import get_connection
+from rich.console import Console
 
+
+console = Console()
 
 def handle_input(user_input):
     parts = user_input.split()
@@ -12,7 +15,7 @@ def handle_input(user_input):
 
     if command == "run":
         if len(parts) < 2:
-            print("Usage: run <command_name>")
+            # print("Usage: run <command_name>")
             return
         
         execute_command(parts[1])
@@ -25,12 +28,15 @@ def handle_input(user_input):
         rows = cur.fetchall()
         
         for row in rows:
-            print(f"{row[0]}: {row[1]}")
+            console.print(f"[bold turquoise4]{row[0]}[/bold turquoise4]: {row[1]}")
         
         conn.close()
     
     elif command == "exit":
         raise SystemExit
     
+    elif command == "cls":
+        console.clear()
+    
     else:
-        print("E400: Unknown command. Available commands: run, list, exit.")
+        console.print("[bold red]E400:[/bold red] Unknown command. Available commands: run, list, exit.")
