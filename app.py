@@ -6,9 +6,9 @@ console = Console()
 
 def main():
     init_db()
-    console.print("[bold green]"-"[/bold green]" * 40)
+    console.print("[bold green]-[/bold green]" * 40)
     console.print("[bold green]Welcome to the Command Shell![/bold green]")
-    console.print("[bold green]"-"[/bold green]" * 40)
+    console.print("[bold green]-[/bold green]" * 40)
     console.print("\nType [bold cyan]help[/bold cyan] to see available commands.")
 
     while True:
