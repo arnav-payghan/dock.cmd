@@ -37,6 +37,14 @@ def handle_input(user_input):
     
     elif command == "cls":
         console.clear()
+
+    elif command == "help":
+        console.print("[bold cyan]Available commands:[/bold cyan]")
+        console.print("\n[bold turquoise4]run <command_name>[/bold turquoise4] - Execute a command")
+        console.print("[bold turquoise4]list[/bold turquoise4] - List all available commands")
+        console.print("[bold turquoise4]exit[/bold turquoise4] - Exit the application")
+        console.print("[bold turquoise4]cls[/bold turquoise4] - Clear the screen")
+        console.print("[bold turquoise4]help[/bold turquoise4] - Show this help message")
     
     else:
         console.print("[bold red]E400:[/bold red] Unknown command. Available commands: run, list, exit.")
