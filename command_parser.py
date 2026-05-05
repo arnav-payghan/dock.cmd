@@ -29,8 +29,8 @@ def handle_input(user_input):
         
         for row in rows:
             console.print(f"[bold turquoise4]{row[0]}[/bold turquoise4]: {row[1]}")
-            console.print("-" * 40)
         
+        console.print()
         conn.close()
     
     elif command == "exit":
@@ -48,4 +48,4 @@ def handle_input(user_input):
         console.print("[bold dodger_blue1]help[/bold dodger_blue1] - Show this help message\n")
     
     else:
-        console.print("[bold red]E400:[/bold red] Unknown command. Available commands: run, list, exit.")
+        console.print("[bold red]E400:[/bold red] Unknown command. Available commands: run, list, exit. \n")
