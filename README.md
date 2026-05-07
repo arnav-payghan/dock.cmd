@@ -4,7 +4,6 @@ This is a personal command shell to be used in powershell on run of `app.py`. Se
 
 A autohotkey script `dockcmd.ahk` is provided for automated usage of terminal upon `Alt + Q`.
 
-![alt text](readme_imgs/main.png)
 ![alt text](readme_imgs/running.png)
 
 ### <mark>Messages:
