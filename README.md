@@ -47,6 +47,9 @@ help
 ```
 to display the available commands.
 
+### Example
+![dock.cmd](readme_imgs/running.png)
+
 ## AutoHotkey Integration
 
 `dockcmd.ahk` allows launching the terminal instantly using `ALT + Q`.  
