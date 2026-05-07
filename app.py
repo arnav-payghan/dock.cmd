@@ -6,6 +6,7 @@ console = Console()
 
 def main():
     init_db()
+    console.clear()
     console.print("[bold green]*[/bold green]", "[bold green]-[/bold green]" * 40, "[bold green]*[/bold green]")
     console.print("[bold green]Welcome to the Command Shell![/bold green]")
     console.print("[bold green]*[/bold green]", "[bold green]-[/bold green]" * 40, "[bold green]*[/bold green]")
