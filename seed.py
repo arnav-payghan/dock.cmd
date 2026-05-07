@@ -7,34 +7,23 @@ def seed_commands():
     cur = conn.cursor()
 
     commands = [
+        # (
+        #     "practice",
+        #     "Open coding practice websites",
+        #     json.dumps({
+        #         "actions": [
+        #             {"type": "url", "value": "https://www.youtube.com"},
+        #             {"type": "url", "value": "https://www.leetcode.com"}
+        #         ]
+        #     })
+        # ),
         (
-            "practice",
-            "Open coding practice websites",
+            "chill",
+            "Need a break? Chill out with some entertainment.",
             json.dumps({
                 "actions": [
                     {"type": "url", "value": "https://www.youtube.com"},
-                    {"type": "url", "value": "https://www.leetcode.com"}
-                ]
-            })
-        ),
-        (
-            "develop",
-            "Open coding environment",
-            json.dumps({
-                "actions": [
-                    {"type": "url", "value": "https://www.github.com"},
-                    {"type": "app", "value": "code"}
-                ]
-            })
-        ),
-        (
-            "work",
-            "Open work based apps like Gmail.",
-            json.dumps({
-                "actions": [
-                    {"type": "url", "value": "https://www.gmail.com"},
-                    {"type": "url", "value": "https://calendar.google.com"},
-                    {"type": "url", "value": "https://web.whatsapp.com"}
+                    {"type": "url", "value": "https://www.netflix.com"},
                 ]
             })
         ),
