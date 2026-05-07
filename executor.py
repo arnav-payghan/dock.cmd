@@ -19,7 +19,7 @@ def execute_command(command_name):
     result = cur.fetchone()
 
     if not result:
-        console.print("[bold red]E404:[/bold red] Command not found.")
+        console.print("[bold red]E404:[/bold red] Command not found.\n")
         return
 
     payload = json.loads(result[0])
