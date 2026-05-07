@@ -1,4 +1,7 @@
-; Press Ctrl + Alt + D to run the sequence
+; AUTOHOTKEY SCRIPT TO RUN THIS. FEEL FREE TO CHANGE THIS ACCORDING TO REQUIREMENT.
+; ! - Alt, q - Q, :: - execute the following code.
+
+; Press "Alt + Q" to run the sequence
 !q::
 {
     ; Open Windows power menu
