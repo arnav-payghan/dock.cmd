@@ -47,7 +47,6 @@ help
 ```
 to display the available commands.
 
-### Example
 ![dock.cmd](readme_imgs/running.png)
 
 ## AutoHotkey Integration
