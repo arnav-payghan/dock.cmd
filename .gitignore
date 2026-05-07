@@ -1,9 +1,6 @@
 # Virtual environment
 venv/
 
-# Images for README
-readme_imgs/
-
 # Python cache files
 __pycache__/
 *.pyc
