@@ -19,9 +19,6 @@
     Send("cd..{Enter}")
     Sleep(300)
 
-    Send("cd{Enter}")
-    Sleep(300)
-
     ; Run dock.cmd
     Send("cd dock.cmd{Enter}")
     Sleep(500)

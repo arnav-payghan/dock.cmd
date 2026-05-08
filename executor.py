@@ -29,8 +29,8 @@ def execute_command(command_name):
             webbrowser.open(action["value"])
 
         elif action["type"] == "app":
-            os.system(action["value"])
-
+            os.startfile(action["value"])
+            
     cur.execute(
         "INSERT INTO command_history (command_name, status) VALUES (?, ?)",
         (command_name, "success")

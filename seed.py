@@ -8,25 +8,16 @@ def seed_commands():
 
     commands = [
         # (
-        #     "practice",
-        #     "Open coding practice websites",
+        #     "command_name",
+        #     "description of the command",
         #     json.dumps({
         #         "actions": [
-        #             {"type": "url", "value": "https://www.youtube.com"},
-        #             {"type": "url", "value": "https://www.leetcode.com"}
+        #             {"type": "app", "value": "file_path"},
+        #             {"type": "url", "value": "https://www.website.com"}
         #         ]
         #     })
         # ),
-        (
-            "chill",
-            "Need a break? Chill out with some entertainment.",
-            json.dumps({
-                "actions": [
-                    {"type": "url", "value": "https://www.youtube.com"},
-                    {"type": "url", "value": "https://www.netflix.com"},
-                ]
-            })
-        ),
+        # Type required data below
     ]
 
     for cmd in commands:
