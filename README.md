@@ -1,4 +1,4 @@
-# 🎍 dock.cmd
+# 🎍 dock.cmd 🎍
 
 A lightweight personal command shell built for PowerShell that launches through `app.py`.
 
