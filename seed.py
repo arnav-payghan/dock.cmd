@@ -20,16 +20,32 @@ def seed_commands():
         # Type required data below
 
         (
-            "design",
-            "Time to start getting creative!",
+            "youtube",
+            "Just wanna screen some random videos, eh?",
             json.dumps({
                 "actions": [
-                    {"type": "app", "value": "C:\\Users\\arnav\\AppData\\Local\\Figma\\Figma.exe"},
-                    {"type": "url", "value": "https://www.behance.net/"},
-                    {"type": "url", "value": "https://in.pinterest.com/"}
+                    {"type": "url", "value": "https://www.youtube.com"}
                 ]
             })
         ),
+        (
+            "whatsapp",
+            "work or socialize, you decide.",
+            json.dumps({
+                "actions": [
+                    {"type": "url", "value": "https://web.whatsapp.com"}
+                ]
+            })
+        ),
+        (
+            "github",
+            "why? but alright! here's your coding hub.",
+            json.dumps({
+                "actions": [
+                    {"type": "url", "value": "https://www.github.com"}
+                ]
+            })
+        )
     ]
 
     for cmd in commands:
