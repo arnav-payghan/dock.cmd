@@ -18,31 +18,13 @@ def seed_commands():
         #     })
         # ),
         # Type required data below
-
         (
-            "youtube",
-            "Just wanna screen some random videos, eh?",
+            "minecraft",
+            "Chill session of Minecraft.",
             json.dumps({
                 "actions": [
-                    {"type": "url", "value": "https://www.youtube.com"}
-                ]
-            })
-        ),
-        (
-            "whatsapp",
-            "work or socialize, you decide.",
-            json.dumps({
-                "actions": [
-                    {"type": "url", "value": "https://web.whatsapp.com"}
-                ]
-            })
-        ),
-        (
-            "github",
-            "why? but alright! here's your coding hub.",
-            json.dumps({
-                "actions": [
-                    {"type": "url", "value": "https://www.github.com"}
+                    {"type": "app", "value": "C:\\Users\\arnav\\AppData\\Roaming\\.tlauncher\\legacy\\Minecraft\\LL.exe"},
+                    {"type": "app", "value": "C:\\Users\\arnav\\AppData\\Local\\Discord\\app-1.0.9236\\Discord.exe"}
                 ]
             })
         )
