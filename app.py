@@ -7,10 +7,20 @@ console = Console()
 def main():
     init_db()
     console.clear()
-    console.print("[bold green]*[/bold green]", "[bold green]-[/bold green]" * 40, "[bold green]*[/bold green]")
-    console.print("[bold green]Welcome to the Command Shell![/bold green]")
-    console.print("[bold green]*[/bold green]", "[bold green]-[/bold green]" * 40, "[bold green]*[/bold green]")
-    console.print("\nType [bold cyan]help[/bold cyan] to see available commands.")
+    console.print("[bold green]*[/bold green]", "[bold green]=[/bold green]" * 70, "[bold green]*[/bold green]")
+    console.print("""
+        [bold green]
+    ██████╗  ██████╗  ██████╗██╗  ██╗    ██████╗███╗   ███╗██████╗
+    ██╔══██╗██╔═══██╗██╔════╝██║ ██╔╝   ██╔════╝████╗ ████║██╔══██╗
+    ██║  ██║██║   ██║██║     █████╔╝    ██║     ██╔████╔██║██║  ██║
+    ██║  ██║██║   ██║██║     ██╔═██╗    ██║     ██║╚██╔╝██║██║  ██║
+    ██████╔╝╚██████╔╝╚██████╗██║  ██╗██╗╚██████╗██║ ╚═╝ ██║██████╔╝
+    ╚═════╝  ╚═════╝  ╚═════╝╚═╝  ╚═╝╚═╝ ╚═════╝╚═╝     ╚═╝╚═════╝
+        [/bold green]
+        """)
+    console.print("[bold green]*[/bold green]", "[bold green]=[/bold green]" * 70, "[bold green]*[/bold green]")
+    console.print("\nType [bold cyan]help[/bold cyan] to check the available commands.")
+    console.print("\nOr type [bold red]exit[/bold red] to leave the terminal.")
 
     while True:
         user_input = console.input("[bold yellow]> [/bold yellow]")
