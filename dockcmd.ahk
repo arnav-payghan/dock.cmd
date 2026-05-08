@@ -1,12 +1,12 @@
 ; AUTOHOTKEY SCRIPT TO RUN THIS. FEEL FREE TO CHANGE THIS ACCORDING TO REQUIREMENT.
-; ! - Alt, q - Q, :: - execute the following code.
+; ^ - Ctrl, ` - `, :: - execute the following code.
 
-; Press "Alt + Q" to run the sequence
-!q::
+; Press "Ctrl + `" to run the sequence
+^`::
 {
     ; Open Windows power menu
     Send("#x")
-    Sleep(300)
+    Sleep(500)
 
     ; Press i
     Send("i")

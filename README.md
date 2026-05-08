@@ -51,7 +51,10 @@ to display the available commands.
 
 ## AutoHotkey Integration
 
-`dockcmd.ahk` allows launching the terminal instantly using `ALT + Q`.  
+`dockcmd.ahk` allows launching the terminal instantly using 
+``
+Ctrl + `
+``.  
 This is useful for minimizing manual start-up steps.  
 Compile the script using AutoHotkey (latest) and add the compiled script it to your startup apps.  
 #### How to add compiled script to startup app?
@@ -59,6 +62,7 @@ Open `WIN + R` (run):
 ``` shell
 shell:startup
 ```
+Paste the compiled script in the folder that it opened.
 
 ## Status Codes
 
