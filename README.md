@@ -47,7 +47,7 @@ help
 ```
 to display the available commands.
 
-![dock.cmd](readme_imgs/running.png)
+![dock.cmd](readme_imgs/v1.4.5_running.png)
 
 ## AutoHotkey Integration
 

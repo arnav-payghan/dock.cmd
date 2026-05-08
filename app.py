@@ -20,7 +20,7 @@ def main():
         """)
     console.print("[bold green]*[/bold green]", "[bold green]=[/bold green]" * 70, "[bold green]*[/bold green]")
     console.print("\nType [bold cyan]help[/bold cyan] to check the available commands.")
-    console.print("\nOr type [bold red]exit[/bold red] to leave the terminal.")
+    console.print("Or type [bold red]exit[/bold red] to leave the terminal.\n")
 
     while True:
         user_input = console.input("[bold yellow]> [/bold yellow]")
