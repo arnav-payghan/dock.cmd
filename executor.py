@@ -1,4 +1,4 @@
-import os
+import subprocess
 import webbrowser
 import json
 from database import get_connection
@@ -29,7 +29,17 @@ def execute_command(command_name):
             webbrowser.open(action["value"])
 
         elif action["type"] == "app":
-            os.startfile(action["value"])
+            try:
+                subprocess.Popen(
+                    action["value"],
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL,
+                    stdin=subprocess.DEVNULL,
+                    creationflags=subprocess.DETACHED_PROCESS
+                )
+            except Exception as e:
+                conn.close()
+                return f"E500: Failed to open app - {str(e)}"
             
     cur.execute(
         "INSERT INTO command_history (command_name, status) VALUES (?, ?)",

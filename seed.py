@@ -18,6 +18,18 @@ def seed_commands():
         #     })
         # ),
         # Type required data below
+
+        (
+            "design",
+            "Time to start getting creative!",
+            json.dumps({
+                "actions": [
+                    {"type": "app", "value": "C:\\Users\\arnav\\AppData\\Local\\Figma\\Figma.exe"},
+                    {"type": "url", "value": "https://www.behance.net/"},
+                    {"type": "url", "value": "https://in.pinterest.com/"}
+                ]
+            })
+        ),
     ]
 
     for cmd in commands:
