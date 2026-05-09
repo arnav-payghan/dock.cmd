@@ -19,12 +19,12 @@ def seed_commands():
         # ),
         # Type required data below
         (
-            "minecraft",
-            "Chill session of Minecraft.",
+            "command_name",
+            "Description.",
             json.dumps({
                 "actions": [
-                    {"type": "app", "value": "C:\\Users\\arnav\\AppData\\Roaming\\.tlauncher\\legacy\\Minecraft\\LL.exe"},
-                    {"type": "app", "value": "C:\\Users\\arnav\\AppData\\Local\\Discord\\app-1.0.9236\\Discord.exe"}
+                    {"type": "app", "value": "path"},
+                    {"type": "url", "value": "https://www.website.com"}
                 ]
             })
         )
