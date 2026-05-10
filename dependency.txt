@@ -1,3 +1,4 @@
 rich
 pygetwindow
 pyautogui
+win32gui
