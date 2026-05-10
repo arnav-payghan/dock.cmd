@@ -19,7 +19,7 @@ def seed_commands():
         # ),
         # Type required data below
         (
-            "command_name",
+            "command",
             "Description.",
             json.dumps({
                 "actions": [
@@ -27,7 +27,7 @@ def seed_commands():
                     {"type": "url", "value": "https://www.website.com"}
                 ]
             })
-        )
+        ),
     ]
 
     for cmd in commands:
