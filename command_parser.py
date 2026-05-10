@@ -1,6 +1,8 @@
+from rich.console import Console
+
 from executor import execute_command
 from database import get_connection
-from rich.console import Console
+from window_manager import stack_windows
 
 
 console = Console()
@@ -46,6 +48,9 @@ def handle_input(user_input):
         console.print("[bold dodger_blue1]exit[/bold dodger_blue1] - Exit the application")
         console.print("[bold dodger_blue1]cls[/bold dodger_blue1] - Clear the screen")
         console.print("[bold dodger_blue1]help[/bold dodger_blue1] - Show this help message\n")
+
+    elif command == "stack":
+        return stack_windows()
     
     else:
         console.print("[bold red]E400:[/bold red] Unknown command. Available commands: run, list, exit. \n")
