@@ -19,12 +19,12 @@ def seed_commands():
         # ),
         # Type required data below
         (
-            "command",
+            "command_name",
             "Description.",
             json.dumps({
                 "actions": [
                     {"type": "app", "value": "path"},
-                    {"type": "url", "value": "https://www.website.com"}
+                    {"type": "url", "value": "https://www.website.com/"}
                 ]
             })
         ),

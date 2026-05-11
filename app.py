@@ -27,7 +27,7 @@ def main():
         try:
             handle_input(user_input)
         except SystemExit:
-            console.print("[bold red]Goodbye![/bold red]")
+            console.print("[bold red]Goodbye![/bold red]\n")
             break
 
 if __name__ == "__main__":

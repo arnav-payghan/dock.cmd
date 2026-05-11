@@ -26,7 +26,12 @@ def handle_input(user_input):
         conn = get_connection()
         cur = conn.cursor()
 
-        cur.execute("SELECT command, description FROM commands")
+        cur.execute("""
+            SELECT command, description
+            FROM commands
+            ORDER BY command ASC
+        """)
+        
         rows = cur.fetchall()
         
         for row in rows:
